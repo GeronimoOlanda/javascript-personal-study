@@ -1,0 +1,74 @@
+/* root cria uma variavel global,
+ . onde podemos chamar em qualquer parte do site, 
+ . utilizando a chamada de função
+ . var(--nome-da-variavel);
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+:root{
+    --primar-color: rgb(38, 126, 162);
+    --primary-color-darker: rgb(23, 79, 126);
+    --secudary-color:rgb(119, 255, 164);
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--primar-color);
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.container{
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+form input, form label, form button{
+display:block;
+width: 100%;
+margin-bottom:10px ;
+}
+form input{
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+form input:focus{
+    outline:1px solid var(--secudary-color);
+}
+form button{
+    border: none;
+    background:  var(--primar-color);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 35px;
+    border-radius: 5px;
+}
+form button:hover{
+    background: var(--primary-color-darker);
+}
+form button:active{
+    color: rgb(84, 154, 201);;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+.relogio{
+    font-size: 3em;
+}
+.pausado{
+    color: red;
+}
+

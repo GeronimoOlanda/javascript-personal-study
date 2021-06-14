@@ -1,0 +1,1 @@
+console.log('Geronimo Olanda' && true && NaN);
